@@ -84,6 +84,23 @@ body {
     cursor: pointer;
 }
 
+/* Selector para filtrar por departamento */
+.filtro-control {
+    padding: 6px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.filtro-control select {
+    width: 238px;
+    padding: 5px 6px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    background: white;
+    font: 14px Arial, sans-serif;
+}
+
 /* Pantallas pequeñas (celulares) */
 @media (max-width: 600px) {
     .info {
@@ -115,5 +132,10 @@ body {
     .search-control input {
         width: 100px;
         font-size: 16px; /* evita que el iPhone amplíe la página al escribir */
+    }
+
+    .filtro-control select {
+        width: 168px;
+        font-size: 16px;
     }
 }
