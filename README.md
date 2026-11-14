@@ -51,7 +51,7 @@ Abre http://localhost:8000. No abras `index.html` con doble clic: el navegador b
 1. En GitHub, **Settings → Pages**.
 2. En **Build and deployment**, elige **Deploy from a branch**.
 3. Rama `main` y carpeta `/ (root)`, y guarda.
-4. Tras uno o dos minutos, el mapa queda en https://ingsebastiangn-stack.github.io/geoservicios_y_websites/
+4. Tras uno o dos minutos, el mapa queda en https://ingsebastiangn-stack.github.io/geoservicios_y_websites/webapp/
 
 > GitHub Pages solo ofrece `/ (root)` o `/docs`, no `/webapp`. Por eso hay un `index.html` en la raíz que redirige a `webapp/`.
 
