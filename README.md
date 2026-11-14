@@ -2,7 +2,10 @@
 
 Aplicación web con Leaflet del curso de Servicios Web Geográficos (Capítulo 11): mapa de departamentos y municipios de Colombia que consume servicios WMS y datos GeoJSON.
 
-**Mapa en línea:** https://ingsebastiangn-stack.github.io/geoservicios_y_websites/
+## Enlaces
+
+- **Repositorio:** https://github.com/ingsebastiangn-stack/geoservicios_y_websites
+- **Mapa en línea:** https://ingsebastiangn-stack.github.io/geoservicios_y_websites/webapp/
 
 ## Qué hace el mapa
 
