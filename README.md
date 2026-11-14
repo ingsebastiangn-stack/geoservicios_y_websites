@@ -14,6 +14,12 @@ Aplicación web con Leaflet del curso de Servicios Web Geográficos (Capítulo 1
 - Búsqueda de departamentos por nombre (sin importar tildes ni mayúsculas).
 - Escala y diseño adaptable a celulares.
 
+## De dónde salen los datos
+
+- **WMS (imágenes):** DANE, servicio `Serv_CapasMGN_2024` (capa 8 departamentos y capa 7 municipios), pedido directamente desde el navegador.
+- **Departamentos en GeoJSON:** `webapp/datos/departamentos.geojson`. El capítulo los pide al WFS de un GeoServer local (`localhost:8080`). En la versión publicada se leen de este archivo por dos razones: un GeoServer local no se alcanza desde internet, y el WFS del DANE no permite CORS, de modo que el navegador bloquea la respuesta cuando la página está en `github.io` (se comprobó). Para usar un GeoServer propio, cambia `departamentosWFSUrl` en `js/app.js` por la URL del WFS con `outputFormat=application/json`.
+- **Área:** el GeoJSON solo trae código y nombre, así que el área en km² se calcula en el navegador al cargar los datos.
+
 ## Estructura
 
 ```
@@ -22,6 +28,7 @@ webapp/
 ├── index.html        # página del mapa
 ├── css/style.css     # estilos (paneles, leyenda, búsqueda, celulares)
 ├── js/app.js         # lógica del mapa
+├── assets/images/    # imágenes y recursos (vacía por ahora)
 └── datos/departamentos.geojson
 ```
 
